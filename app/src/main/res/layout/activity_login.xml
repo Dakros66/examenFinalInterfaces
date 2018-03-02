@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+
+    tools:context="com.example.a21624926.danielortegaexameninterfaces2.LoginActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="300dp"
+        android:text="Uem HandyCrafted"
+        android:textColor="@android:color/background_light" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="556dp"
+        android:layout_gravity="bottom"
+        android:foregroundGravity="bottom"
+        android:paddingTop="100dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/girl" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        style="@style/EstiloLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/nattizzen"
+        android:text="YEP!"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/editTextlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EstiloLoginContenedor"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/title"
+
+            android:layout_toStartOf="@+id/title">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/userNameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColorHint="#FFEB3B"
+                android:hint="username"
+
+                android:textSize="17sp">
+
+                <requestFocus />
+            </android.support.design.widget.TextInputEditText>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/title"
+
+            android:layout_toStartOf="@+id/title">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/passwordField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="password"
+
+                android:inputType="textPassword"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#D2323f"
+                android:text="SIGN IN"
+                android:textColor="@android:color/background_light" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+</android.widget.FrameLayout>
